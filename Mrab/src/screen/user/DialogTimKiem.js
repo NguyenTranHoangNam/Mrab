@@ -68,10 +68,10 @@ export default class DialogTimKiem extends Component {
                                 alignItems: 'center'
                             }}
                         >
-                            {/* <Image
+                            <Image
                                 source={require("../../asset/image/search.png")}
                                 style={{ width: "30%", height: "30%", resizeMode: "contain" }}
-                            /> */}
+                            />
                             <Text>Đang tìm tài xế...</Text>
                         </View>
                         <TouchableHighlight

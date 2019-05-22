@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { View, Image, Dimensions, Text ,TouchableOpacity,Modal} from "react-native";
+import { View, Image, Dimensions, Text, TouchableOpacity, Modal } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import DialogTimKiem from "./DialogTimKiem";
+import { THEME_COLOR } from "../../utils";
 const { width, height } = Dimensions.get("screen");
 export default class UserHomeScreen extends Component {
   state = {};
-  
+
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -39,10 +40,10 @@ export default class UserHomeScreen extends Component {
           />
         </View>
         <View zIndex={1}>
-          {/* <Image
+          <Image
             source={require("../../asset/image/map.png")}
             style={{ width: "100%", height: "100%", zIndex: 1 }}
-          /> */}
+          />
         </View>
         <View
           style={{
@@ -68,30 +69,33 @@ export default class UserHomeScreen extends Component {
             }}
             placeholder={'Bạn có mã khuyến mãi?'}
           />
-          <View style={{flexDirection:'row',justifyContent:"space-around"}}>
+          <View style={{ flexDirection: 'row', justifyContent: "space-around" }}>
             {/* <Image
-              source={require('../../asset/image/motorbike.png')} style={{ width: 30, height: 30, resizeMode: 'contain',margin:5 }}
+              source={require('../../asset/image/motorbike.png')} style={{ width: 30, height: 30, resizeMode: 'contain', margin: 5 }}
             /> */}
-            <Text style={{margin:5,fontSize:20}}>Motor Bike</Text>
-            <View style={{width:1,height:30,backgroundColor:'#757575'}}/>
-            <Text style={{margin:5,fontSize:20}}>20.000VNĐ</Text>
+            <View style={{ width: height * 0.0625, height: height * 0.0625, backgroundColor: THEME_COLOR, borderRadius: height * 0.0625 * 2, justifyContent: "center", alignItems: 'center' }}>
+              <Image source={require('../../asset/image/bike.png')} style={{ width: height * 0.03, height: height * 0.03, margin: 5 }} />
+            </View>
+            <Text style={{ margin: 5, fontSize: 20 }}>Motor Bike</Text>
+            <View style={{ width: 1, height: 30, backgroundColor: '#757575' }} />
+            <Text style={{ margin: 5, fontSize: 20 }}>20.000VNĐ</Text>
           </View>
-          <View style={{flex:1,justifyContent:"center",alignItems:'center'}}>
+          <View style={{ flex: 1, justifyContent: "center", alignItems: 'center' }}>
             <TouchableOpacity
-            onPress={()=>{
-              this.modal.setModalVisible(true)
-            }}
-            style={{borderRadius:4,width:'80%',margin:10,borderColor:'#757575',borderWidth:1,justifyContent:"center"}}
+              onPress={() => {
+                this.modal.setModalVisible(true)
+              }}
+              style={{ backgroundColor: '#FF9100', width: '95%', margin: 10, justifyContent: "center", borderRadius: 4 }}
             >
-              <View style={{width:'80%',margin:10,borderColor:'#757575',justifyContent:'center',alignItems:'center'}}>
-                <Text style={{textAlign:'center',width:'100%'}}>Đặt xe</Text>
-              </View>
+              <Text style={{ textAlign: 'center', width: '95%', margin: 10, borderColor: '#757575', borderRadius: 10, color: 'white' }}>
+                Đặt xe
+                </Text>
             </TouchableOpacity>
           </View>
         </View>
         <DialogTimKiem
-        navigation={this.props.navigation}
-         ref={dialog => this.modal = dialog}
+          navigation={this.props.navigation}
+          ref={dialog => this.modal = dialog}
         />
       </View>
     );
