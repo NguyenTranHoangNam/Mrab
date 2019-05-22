@@ -14,10 +14,10 @@ export default class TimTaiXe extends Component {
                         this.props.navigation.navigate('HoanThanhChuyen')
                     }}
                     >
-                    <Image
-                        source={require("./asset/image/map.png")}
+                    {/* <Image
+                        source={require("../../asset/image/map.png")}
                         style={{ width: "100%", height: "100%", zIndex: 1 }}
-                    />
+                    /> */}
                     </TouchableWithoutFeedback>
                     
                 </View>
@@ -38,17 +38,17 @@ export default class TimTaiXe extends Component {
                     }}
                 >
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                        <Image source={require('./asset/image/message.png')} style={{ width: height * 0.0625, height: height * 0.0625, margin: 5 }} />
-                        <Image source={require('./asset/image/driver.png')} style={{ width: height * 0.125, height: height * 0.125, margin: 5 }} />
-                        <Image source={require('./asset/image/phone.png')} style={{ width: height * 0.0625, height: height * 0.0625, margin: 5 }} />
+                        {/* <Image source={require('../../asset/image/message.png')} style={{ width: height * 0.0625, height: height * 0.0625, margin: 5 }} />
+                        <Image source={require('../../asset/image/driver.png')} style={{ width: height * 0.125, height: height * 0.125, margin: 5 }} />
+                        <Image source={require('../../asset/image/phone.png')} style={{ width: height * 0.0625, height: height * 0.0625, margin: 5 }} /> */}
                     </View>
                     <Text>Nguyễn Văn A</Text>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                        <Image source={require('./asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
-                        <Image source={require('./asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
-                        <Image source={require('./asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
-                        <Image source={require('./asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
-                        <Image source={require('./asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
+                        {/* <Image source={require('../../asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
+                        <Image source={require('../../asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
+                        <Image source={require('../../asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
+                        <Image source={require('../../asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} />
+                        <Image source={require('../../asset/image/star.png')} style={{ width: 25, height: 25, margin: 5, resizeMode: 'contain' }} /> */}
                     </View>
                     <Text>51G - 22412</Text>
                     {/* <View style={{ flex: 1, justifyContent: "center", alignItems: 'center' }}> */}

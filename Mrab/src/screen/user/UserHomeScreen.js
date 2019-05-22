@@ -39,10 +39,10 @@ export default class UserHomeScreen extends Component {
           />
         </View>
         <View zIndex={1}>
-          <Image
-            source={require("./../../asset/image/map.png")}
+          {/* <Image
+            source={require("../../asset/image/map.png")}
             style={{ width: "100%", height: "100%", zIndex: 1 }}
-          />
+          /> */}
         </View>
         <View
           style={{
@@ -69,9 +69,9 @@ export default class UserHomeScreen extends Component {
             placeholder={'Bạn có mã khuyến mãi?'}
           />
           <View style={{flexDirection:'row',justifyContent:"space-around"}}>
-            <Image
-              source={require('./asset/image/motorbike.png')} style={{ width: 30, height: 30, resizeMode: 'contain',margin:5 }}
-            />
+            {/* <Image
+              source={require('../../asset/image/motorbike.png')} style={{ width: 30, height: 30, resizeMode: 'contain',margin:5 }}
+            /> */}
             <Text style={{margin:5,fontSize:20}}>Motor Bike</Text>
             <View style={{width:1,height:30,backgroundColor:'#757575'}}/>
             <Text style={{margin:5,fontSize:20}}>20.000VNĐ</Text>

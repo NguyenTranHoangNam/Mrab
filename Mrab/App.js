@@ -10,12 +10,12 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import RootNavigator from './src/rootNavigator/rootNavigator'
 
-
+import HomeScreen from './src/screen/HomeScreen'
 export default class App extends Component {
   render() {
     return (
       <View style={{flex:1}}>
-            <RootNavigator/>    
+        <RootNavigator/>
       </View>
     );
   }

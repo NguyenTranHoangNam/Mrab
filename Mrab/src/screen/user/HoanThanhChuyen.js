@@ -16,10 +16,10 @@ export default class HoanThanhChuyen extends Component {
     return (
       <View style={{ flex: 1 }}>
         <View zIndex={1}>
-          <Image
-            source={require("./asset/image/map.png")}
+          {/* <Image
+            source={require("../../asset/image/map.png")}
             style={{ width: "100%", height: "100%", zIndex: 1 }}
-          />
+          /> */}
         </View>
         <View
           style={{
@@ -44,8 +44,8 @@ export default class HoanThanhChuyen extends Component {
               alignItems: "center"
             }}
           >
-            <Image
-              source={require("./asset/image/message.png")}
+            {/* <Image
+              source={require("../../asset/image/message.png")}
               style={{
                 width: height * 0.0625,
                 height: height * 0.0625,
@@ -53,7 +53,7 @@ export default class HoanThanhChuyen extends Component {
               }}
             />
             <Image
-              source={require("./asset/image/driver.png")}
+              source={require("../../asset/image/driver.png")}
               style={{
                 width: height * 0.125,
                 height: height * 0.125,
@@ -61,13 +61,13 @@ export default class HoanThanhChuyen extends Component {
               }}
             />
             <Image
-              source={require("./asset/image/phone.png")}
+              source={require("../../asset/image/phone.png")}
               style={{
                 width: height * 0.0625,
                 height: height * 0.0625,
                 margin: 5
               }}
-            />
+            /> */}
           </View>
           <Text>Nguyễn Văn A</Text>
           <View
@@ -77,8 +77,8 @@ export default class HoanThanhChuyen extends Component {
               alignItems: "center"
             }}
           >
-            <Image
-              source={require("./asset/image/star.png")}
+            {/* <Image
+              source={require("../../asset/image/star.png")}
               style={{
                 width: 25,
                 height: 25,
@@ -87,7 +87,7 @@ export default class HoanThanhChuyen extends Component {
               }}
             />
             <Image
-              source={require("./asset/image/star.png")}
+              source={require("../../asset/image/star.png")}
               style={{
                 width: 25,
                 height: 25,
@@ -96,7 +96,7 @@ export default class HoanThanhChuyen extends Component {
               }}
             />
             <Image
-              source={require("./asset/image/star.png")}
+              source={require("../../asset/image/star.png")}
               style={{
                 width: 25,
                 height: 25,
@@ -105,7 +105,7 @@ export default class HoanThanhChuyen extends Component {
               }}
             />
             <Image
-              source={require("./asset/image/star.png")}
+              source={require("../../asset/image/star.png")}
               style={{
                 width: 25,
                 height: 25,
@@ -114,14 +114,14 @@ export default class HoanThanhChuyen extends Component {
               }}
             />
             <Image
-              source={require("./asset/image/star.png")}
+              source={require("../../asset/image/star.png")}
               style={{
                 width: 25,
                 height: 25,
                 margin: 5,
                 resizeMode: "contain"
               }}
-            />
+            /> */}
           </View>
           <Text>51G - 22412</Text>
           <TouchableOpacity
