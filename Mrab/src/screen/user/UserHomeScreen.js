@@ -3,7 +3,7 @@ import { View, Image, Dimensions, Text ,TouchableOpacity,Modal} from "react-nati
 import { TextInput } from "react-native-gesture-handler";
 import DialogTimKiem from "./DialogTimKiem";
 const { width, height } = Dimensions.get("screen");
-export default class Home extends Component {
+export default class UserHomeScreen extends Component {
   state = {};
   
   render() {
@@ -40,7 +40,7 @@ export default class Home extends Component {
         </View>
         <View zIndex={1}>
           <Image
-            source={require("./asset/image/map.png")}
+            source={require("./../../asset/image/map.png")}
             style={{ width: "100%", height: "100%", zIndex: 1 }}
           />
         </View>
