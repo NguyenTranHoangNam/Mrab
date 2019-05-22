@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-export default class DatXe extends Component {
+export default class DriverHomeScreen extends Component {
     state = {  }
     render() {
         return (

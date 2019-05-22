@@ -1,0 +1,5 @@
+const BACKGROUND_COLOR = '#F0F4F7'
+const THEME_COLOR = '#FF9100'
+const BLUE = '#008FE5'
+const GRAY = '#D8D8D8'
+const GREEN = '#04BE04'

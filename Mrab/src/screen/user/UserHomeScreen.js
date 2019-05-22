@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View, Image, Dimensions } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 const { width, height } = Dimensions.get("screen");
-export default class Home extends Component {
+export default class UserHomeScreen extends Component {
   state = {};
   render() {
     return (
@@ -37,7 +37,7 @@ export default class Home extends Component {
         </View>
         <View zIndex={1}>
           <Image
-            source={require("./asset/image/map.png")}
+            source={require("./../../asset/image/map.png")}
             style={{ width: "100%", height: "100%", zIndex: 1 }}
           />
         </View>
