@@ -1,15 +1,34 @@
 import React, { Component } from "react";
-import { View, Image, Dimensions, Text, TouchableOpacity, Modal } from "react-native";
+import { View, Image, Dimensions, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import DialogTimKiem from "./DialogTimKiem";
 import { THEME_COLOR } from "../../utils";
 const { width, height } = Dimensions.get("screen");
 export default class UserHomeScreen extends Component {
   state = {};
-
+  onBackPress = () => {
+    this.props.navigation.goBack();
+}
   render() {
     return (
       <View style={{ flex: 1 }}>
+          <View style={styles.header}>
+                        <TouchableOpacity style={{
+                            width: 40, height: 40, borderRadius: 40, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', shadowColor: "#000",
+                            shadowOffset: {
+                                width: 0,
+                                height: 2,
+                            },
+                            shadowOpacity: 0.25,
+                            shadowRadius: 3.84,
+                            // flexDirection:'row',
+                            elevation: 5,
+                        }} onPress={this.onBackPress}>
+                            <Image source={require('./../../asset/image/back.png')} style={{ height: 40 }} resizeMode={'center'} />
+                            
+                        </TouchableOpacity>
+                        <Image source={require('./../../asset/image/logo.png')} style={{ flex:1}} resizeMode={'center'}/>
+                    </View>
         <View
           style={{
             position: "absolute",
@@ -18,7 +37,8 @@ export default class UserHomeScreen extends Component {
             left: 0,
             right: 0,
             marginLeft: 20,
-            marginRight: 20
+            marginRight: 20,
+            marginTop:50
           }}
         >
           <TextInput
@@ -26,7 +46,8 @@ export default class UserHomeScreen extends Component {
               width: '100%',
               height: 35,
               backgroundColor: "white",
-              borderRadius: 8
+              borderRadius: 8,
+              // backgroundColor:'#757575'
             }}
           />
           <TextInput
@@ -35,7 +56,8 @@ export default class UserHomeScreen extends Component {
               height: 35,
               backgroundColor: "white",
               borderRadius: 8,
-              marginTop: 10
+              marginTop: 10,
+              // backgroundColor:'#737373'
             }}
           />
         </View>
@@ -101,3 +123,14 @@ export default class UserHomeScreen extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  header: {
+      height: 44,
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      flexDirection: 'row',
+      paddingLeft: 10,
+      paddingRight: 10,
+      backgroundColor: THEME_COLOR,
+  }
+})

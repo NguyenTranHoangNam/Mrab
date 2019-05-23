@@ -65,6 +65,7 @@ export default class DanhGia extends Component {
                 <TouchableOpacity
               onPress={() => {
                 // this.modal.setModalVisible(true)
+                this.props.navigation.popToTop()
               }}
               style={{ backgroundColor: '#FF9100', width: '80%', margin: 10, justifyContent: "center", borderRadius: 4 }}
             >

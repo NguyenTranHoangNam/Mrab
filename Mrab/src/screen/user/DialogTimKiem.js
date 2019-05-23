@@ -69,7 +69,7 @@ export default class DialogTimKiem extends Component {
                             }}
                         >
                             <Image
-                                source={require("../../asset/image/search.png")}
+                                source={require("../../asset/image/search-1.png")}
                                 style={{ width: "30%", height: "30%", resizeMode: "contain" }}
                             />
                             <Text>Đang tìm tài xế...</Text>

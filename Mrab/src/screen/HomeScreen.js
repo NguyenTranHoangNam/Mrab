@@ -13,7 +13,7 @@ export default class HomeScreen extends Component {
     
     render() {
         return (
-            <View style={{flex:1,backgroundColor:"blue"}}>
+            <View style={{flex:1,justifyContent:"center",alignContent:"center"}}>
                 <TouchableOpacity onPress={this.onUserHomePress}>
                     <Text>Đặt xe</Text>
                 </TouchableOpacity>
