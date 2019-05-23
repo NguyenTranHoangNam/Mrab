@@ -36,7 +36,7 @@ export default class TimTaiXe extends Component {
                         }}
                     >
                         <Image
-                            source={require("../../asset/image/map.png")}
+                            source={require("../../asset/image/map-4.png")}
                             style={{ width: "100%", height: "100%", zIndex: 1 }}
                         />
                     </TouchableWithoutFeedback>

@@ -47,8 +47,11 @@ export default class UserHomeScreen extends Component {
               height: 35,
               backgroundColor: "white",
               borderRadius: 8,
+              borderColor:'#4F4F4F',
+              borderWidth:1
               // backgroundColor:'#757575'
             }}
+            value={'221 Nguyễn Văn Cừ, Quận 5, TPHCM'}
           />
           <TextInput
             style={{
@@ -57,8 +60,11 @@ export default class UserHomeScreen extends Component {
               backgroundColor: "white",
               borderRadius: 8,
               marginTop: 10,
+              borderColor:'#4F4F4F',
+              borderWidth:1
               // backgroundColor:'#737373'
             }}
+            value={'109 Lê Hồng Phong, Quận 10, TPHCM'}
           />
         </View>
         <View zIndex={1}>
@@ -132,5 +138,17 @@ const styles = StyleSheet.create({
       paddingLeft: 10,
       paddingRight: 10,
       backgroundColor: THEME_COLOR,
+  },
+  input: {
+    // backgroundColor: '#2E9298',
+    borderRadius: 10,
+    // padding: 10,
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 3
+    },
+    shadowRadius: 5,
+    shadowOpacity: 1.0
   }
 })
