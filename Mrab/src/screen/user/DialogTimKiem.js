@@ -5,8 +5,10 @@ import {
     TouchableHighlight,
     View,
     Dimensions,
-    Image
+    Image,
+    ActivityIndicator
 } from "react-native";
+import { THEME_COLOR } from "../../utils";
 
 const { width, height } = Dimensions.get("screen");
 
@@ -68,10 +70,11 @@ export default class DialogTimKiem extends Component {
                                 alignItems: 'center'
                             }}
                         >
-                            <Image
+                            {/* <Image
                                 source={require("../../asset/image/search-1.png")}
                                 style={{ width: "30%", height: "30%", resizeMode: "contain" }}
-                            />
+                            /> */}
+                              <ActivityIndicator size="large" color={THEME_COLOR} />
                             <Text>Đang tìm tài xế...</Text>
                         </View>
                         <TouchableHighlight
