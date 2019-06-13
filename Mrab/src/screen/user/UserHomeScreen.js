@@ -5,7 +5,9 @@ import DialogTimKiem from "./DialogTimKiem";
 import { THEME_COLOR } from "../../utils";
 const { width, height } = Dimensions.get("screen");
 export default class UserHomeScreen extends Component {
-  state = {};
+  state = {
+    endPoint:""
+  };
   onBackPress = () => {
     this.props.navigation.goBack();
 }
@@ -64,7 +66,8 @@ export default class UserHomeScreen extends Component {
               borderWidth:1
               // backgroundColor:'#737373'
             }}
-            value={'109 Lê Hồng Phong, Quận 10, TPHCM'}
+            onChangeText={endPoint=>{this.setState({endPoint})}}
+            value={this.state.endPoint}
           />
         </View>
         <View zIndex={1}>
@@ -111,7 +114,12 @@ export default class UserHomeScreen extends Component {
           <View style={{ flex: 1, justifyContent: "center", alignItems: 'center' }}>
             <TouchableOpacity
               onPress={() => {
-                this.modal.setModalVisible(true)
+                if(this.state.endPoint.length > 0){
+                  this.modal.setModalVisible(true)
+                }
+                else{
+                  alert('Vui lòng nhập điểm đến')
+                }
               }}
               style={{ backgroundColor: '#FF9100', width: '95%', margin: 10, justifyContent: "center", borderRadius: 4 }}
             >
